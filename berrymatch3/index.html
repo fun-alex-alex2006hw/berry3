@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | BMTE PRO</title>
+    <style type="text/css">
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+    #canvas {
+        position:fixed;
+        top:0px;
+        left:0px;
+        height: 100%;
+        width: 100%;
+    }
+    </style>
+  </head>
+  <body>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="100%" width="100%"></canvas>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/berrymatch3.data",
+    codeUrl: "Release/berrymatch3.js",
+    asmUrl: "Release/berrymatch3.asm.js",
+    memUrl: "Release/berrymatch3.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+  </body>
+</html>
